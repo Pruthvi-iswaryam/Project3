@@ -1,7 +1,6 @@
 package com.pack.Controller;
-import com.pack.Repository.UnitsAndTensArray;
-import com.pack.Service.*;
-	
+
+import com.pack.Service.NumberToWordConvertorInterface;
 
 public class NumberToWordController {
 	
@@ -12,7 +11,7 @@ public class NumberToWordController {
 			this.numbertowordService = numbertowordService;
 		}
 		
-		public String customNumberInput(int number)
+		public String CustomConvertor(int number)
 		{
 			return numbertowordService.isConvertNumbertoWord(number);
 		}
@@ -20,6 +19,3 @@ public class NumberToWordController {
 		
 	}
 
-	
-
-}

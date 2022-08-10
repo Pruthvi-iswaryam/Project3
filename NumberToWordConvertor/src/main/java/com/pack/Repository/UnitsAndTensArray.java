@@ -7,6 +7,5 @@ package com.pack.Repository;
 			   "Eleven","Twelve","Thirteen","Fourteen","Fifteen","Sixteen","Seventeen","Eighteen","Nineteen"};
 
 		
-		
 		public String tensArray [] = {"","","Twenty","Thirty","Forty","Fifty","Sixty","Seventy","Eighty","Ninety"};
 	}

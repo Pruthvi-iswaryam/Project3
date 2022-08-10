@@ -3,8 +3,7 @@ package com.pack.Service;
 import com.pack.Repository.UnitsAndTensArray;
 
 public class NumberToWordConvertorImpl {
-	int number;
-
+	
 	public NumberToWordConvertorImpl() {
 
 	}

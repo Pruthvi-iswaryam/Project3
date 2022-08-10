@@ -1,15 +1,13 @@
 package com.pack.Service;
 
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 import org.junit.Test;
 
-import com.pack.Controller.NumberToWordController;
 import com.pack.Repository.UnitsAndTensArray;
-import com.pack.Repository.UnitsAndTensArrayInterface;
 public class NumberToWordConvertorImplTest {
 
 	NumberToWordConvertorImpl convertor = new NumberToWordConvertorImpl(new UnitsAndTensArray());
