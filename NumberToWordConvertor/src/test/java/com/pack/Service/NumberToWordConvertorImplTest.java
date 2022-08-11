@@ -78,12 +78,22 @@ public class NumberToWordConvertorImplTest {
 		convertor = new NumberToWordConvertorImpl(convert);
 		assertEquals("Ninety Eight Millions Seven Lakhs Sixty Five Thousand Four Hundred Thirty Two", convert.isConvertNumbertoWord(98765432));
 	}
+	
 	@Test
-	public void When_NumberIszero_Return_NumberInWord()
+	public void When_NumberIsNegativeAndLessThanThousand_Return_NumberInWord()
 	{
-		int number =0;
-		
-		assertEquals("Zero", convertor.isConvertNumbertoWord(number));
+		NumberToWordConvertorInterface convert = mock(NumberToWordConvertorInterface.class);
+		when(convert.isConvertNumbertoWord(-600)).thenReturn("-Six Hundred");
+		convertor = new NumberToWordConvertorImpl(convert);
+		assertEquals("-Six Hundred", convert.isConvertNumbertoWord(-600));
+	}
+	@Test
+	public void When_NumberIsNegativeAndLessThanTen_Return_NumberInWord()
+	{
+		NumberToWordConvertorInterface convert = mock(NumberToWordConvertorInterface.class);
+		when(convert.isConvertNumbertoWord(-9)).thenReturn("-Nine");
+		convertor = new NumberToWordConvertorImpl(convert);
+		assertEquals("-Nine", convert.isConvertNumbertoWord(-9));
 	}
 
 }

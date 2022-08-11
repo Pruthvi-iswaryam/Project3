@@ -4,7 +4,7 @@ import com.pack.Service.NumberToWordConvertorInterface;
 
 public class NumberToWordController {
 	
-	private NumberToWordConvertorInterface numbertowordService;
+		private NumberToWordConvertorInterface numbertowordService;
 
 		public NumberToWordController(NumberToWordConvertorInterface numbertowordService) {
 			super();
@@ -14,8 +14,6 @@ public class NumberToWordController {
 		public String CustomConvertor(int number)
 		{
 			return numbertowordService.isConvertNumbertoWord(number);
-		}
+		}		
 		
-		
-	}
-
+}
